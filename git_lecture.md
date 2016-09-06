@@ -58,6 +58,43 @@ $ git commit
 
 This command will prompt you for a commit message. Type in whatever you want. You now have stored a version of your project in Git.
 
+Lets say you have 10 files in your project, file0, file1, file2.... file9. Lets say that you worked on file0, file1, and file2, and you want to commit to git.
+
+Again, you first have to add your changed files to the staging environment.
+
+```
+$ git add file0 file1 file2
+```
+
+Now you can commit your changed files. Your computer now has a snapshot.
+```
+$ git commit -m "your commit message"
+```
+
+Now you have your files version controlled in your local machine, but you have to push to the cloud (Github) in order to share your progress with your teammates.
+```
+$ git push origin master
+```
+
+origin = remote
+master = branch
+
+If you want to download changes that your teammates have made in the cloud to your local version:
+```
+$ git pull origin master
+```
+
+If you want to add a new remote
+```
+$ git remote add origin https://github.com/user/repo.git
+```
+
+If you want to create another branch
+```
+$ git checkout -b "yourBranchName"
+```
+
+
 
 
 
