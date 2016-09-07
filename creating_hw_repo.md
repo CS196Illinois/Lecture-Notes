@@ -59,7 +59,7 @@ Your terminal should look something like this after finishing this process:
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/18332274/e4bec8de-752a-11e6-88dd-530e7485586a.png)
 
 
-8) You're done! If you want to make changes to your homework, re-commit and re-push, and your files on the cloud will be updated. Congratulations, you've just version controlled your homework submissions folder! From now on, add all of your finished homeworks to this folder and push to submit. We will take your last commit as your submission.
+8) You're done! If you want to make changes to your homework, re-commit and re-push, and your files on the cloud will be updated. Congratulations, you've just version controlled your homework submissions folder! From now on, add all of your finished homeworks to this folder and push to submit. We will take your last commit as your submission. You do not need to delete your old homeworks, but you will not lose points for doing so.
 
 
 
