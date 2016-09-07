@@ -29,8 +29,39 @@ Go to "settings", "options", and "rename" your repository. For example, I would 
 $ git clone <your_repo_url_here>.
 
 ```
-Your repo url will be inside the file, in place of mine (its highlighted).
+Your repo url will be inside the homework-<your_netid> repo, in place of mine (its highlighted).
 
-![alt text](https://cloud.githubusercontent.com/assets/7456865/18331699/91a915c2-7526-11e6-90a6-61dba896145e.png)
+![alt text](https://cloud.githubusercontent.com/assets/7456865/18332017/cf0f4330-7528-11e6-8781-633ab8ba4c96.png)
+
+5) Once you clone, you should have an empty repository in your file system. cd into your homework file. Now pull or download your homework file (the one with the questions) and put it in this empty repository. You should now have your hw1 (or any other hw) file in your repo. Feel free to import any other files that you think might be relevant to your hw. When we activate the autograder, we will specifically look for a file called "hw1.py" (hw2.py, hw3.py, etc ,etc), and so you can even leave your old homeworks in the repo if you wish.
+
+6) complete the homework.
+
+7) When you are ready to submit, we have to go through all of the steps to push your homework file up to the cloud. 
+
+First run the following command to add your new files to the staging environment this command will simply add all untracked files to the staging area:
+
+```
+$ git add .
+```
+
+Next, you must commit to save your changes to git. Run the following command to save the snapshot of your code to your local git. Your commit message can be anything, it does not matter.:
+
+```
+$ git commit -m "<your commit message here.>"
+```
+
+Finally, you're ready to push. Run the following command to "push" your new homework file to Github:
+```
+$ git push origin master
+```
+Your terminal should look something like this after finishing this process:
+![alt text](https://cloud.githubusercontent.com/assets/7456865/18332274/e4bec8de-752a-11e6-88dd-530e7485586a.png)
+
+
+8) You're done! If you want to make changes to your homework, re-commit and re-push, and your files on the cloud will be updated. Congratulations, you've just version controlled your homework submissions folder! From now on, add all of your finished homeworks to this folder and push to submit. We will take your last commit as your submission.
+
+
+
 
 
