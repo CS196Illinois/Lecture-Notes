@@ -1,5 +1,8 @@
 # Python Loops and Arrays
 
+
+# Loops
+
 ## For Loops
 
 Loops allow you to repeat a block of code multiple times. If we want to print the numbers 1 through 10, we can do this:
@@ -154,7 +157,237 @@ will produce
 6
 4
 2
-``
+```
+
+**Nested For loops**
+You can nest for loops!
+
+```python
+for i in xrange(10):
+  for j in xrange(10):
+    print i+j
+```
+
+Nested for loops can be used to iterate over n-dimensional data structures. More next class!
+
+## While loops
+While loops are another kind of loop.
+Syntax:
+```python
+while <expression>:
+  # do something
+
+```
+The 'while' keyword lets Python know you want to use a while loop.
+The <expression> returns a boolean value that will be iterated at every loop. Once the expression returns false, the while loop stops.
+
+This is an example of printing all numbers from 0 to 10
+
+```python
+counter = 0
+while counter < 11:
+  print counter
+  counter += 1
+```
+Note the use of a counter to trigger the break.
+
+
+
+**While vs For loops**
+When should you use a while loop over a for loop? A for loop is used when you know exactly the number of iterations you need. A while loop is used when you are unsure of the number of iterations in advance. Would you use a while loop or a for loop in the following scenarios?
+  
+1) Print numbers 0 to 10
+2) Print characters of a string of length 10
+3) Print characters of an arbitrary sized string
+4) Print a stream of characters
+
+**Off-By-One Errors**
+Errors where you're off by one
+
+
+
+# Arrays
+
+Arrays hold collections of *things*.
+In python, arrays are called "lists" and are not type-restricted. This means you can store objects of different types in the same list.
+
+An aside - there are no primitive types in python.
+
+## Static arrays vs Dynamic arrays
+
+Local or "static" arrays are allocated on the stack and are alloted a fixed amount of space. This means that static arrays cannot "grow", and you are limited to the amount of space that you initially allocated to that array.
+
+"Dynamic Arrays" are allocated on the heap, or the "free store". This means that dynamic arrays can "grow", and you can continue to append values without having to worry about hitting the size limit.
+
+Stack memory is a special region of your computer’s memory that stores temporary variables created by each function.
+
+The heap is a region of your computer’s memory that is not managed automatically for you, and is not as tightly managed by the CPU. It is a more free-floating region of memory (and is larger). 
+
+*Python*
+Python lists are dynamic. There is no native implementation of static lists in python. That means all lists in python can 'grow'.
+
+## Python Lists
+
+### Creating Lists
+
+```python
+groceries = [] # creates an empty list and assigns it to the variable "groceries"
+groceries  = ['apple'] # creates a list with one item 'apple'
+groceries = ['apple', 'pear', 'watermelon'] # creates a list with multiple items
+groceries = [1,'apple', [], 2.3] # creates a list of an int, string, list, and double. Lists can store other lists!
+
+a = [ "wow" ] * 5
+print a  # prints ['wow', 'wow', 'wow', 'wow', 'wow']
+
+# Using the list constructor
+a = list("abcd")
+print a  # prints ['a', 'b', 'c', 'd']
+```
+
+### List properties
+
+```python
+numbers = [1,2,3,4]
+
+print len(numbers) # prints 4
+print max(numbers) # prints 4
+print min(numbers) # prints 1
+
+```
+
+### Accessing Elements in a list
+Say you want to access a certain item in a list. Lists are indexed by integer, starting with 0. "0-indexed".
+
+Syntax:
+listName[index]
+
+listName is the list that you are working with.
+index is the slice of the list that you want to access.
+
+
+**Positive list index access**
+```python
+a = [12,56,29,5]
+print a[0] # prints the 0th element in the list, 12
+print a[2] # prints the 2nd element in the list, 29
+
+```
+
+**Negative list index access**
+```python
+a = [12,56,29,5]
+print a[-1] # prints the 0th element in the list, 5
+print a[-2] # prints the 2nd element in the list, 29
+
+```
+
+**List Slices**
+You can access a subset of a list, which is called a "slice".
+
+Syntax:
+listName[x:y]
+
+listName is the list that you are working with
+x is the index that you want to start your slice
+y is the index that you end your slice,up to and not including y
+
+```python
+a = [23,56,89,12,78,90]
+print a[0:3] # prints a subset of list a from the 0th element up to and not including the 3rd element, [23,56,89]
+
+# What happens when you slice out of bounds?
+print a[0:100] # Doesn't throw an error, will print up to the end of the list, [23,56,89,12,78,90]
+
+```
+
+**Skip Slicing**
+
+You can take slices of lists with a step. In other words, you can extract a list of every n'th element in the list.
+
+Syntax
+listName[x:y:step]
+x is your staring index
+y is the last index
+step is how many indexes you want to skip inbetween your slices.
+
+```python
+
+a = [12,56,29,5,23,6,8,23]
+print a[0:13:2] # prints a slice of the list from 0 to 13 (out of bounds) every other index, [12, 29, 23, 8]
+
+```
+
+**List Membership**
+What if you want to know if an item is already in your list?
+For example, imagine a grocery list
+```python
+groceries = ['apple', 'pear', 'grape']
+
+```
+I want to check if I added "apple" to the grocery list.
+
+```python
+print 'apple' in groceries # checks if the string apple is in groceries
+
+```
+I want to make sure I don't have  "tomato" in my grocery list.
+
+```python
+print 'tomato' not in groceries # checks if the string tomato is not in groceries, prints True
+```
+
+Count the occurances of an item in a list
+
+```python
+print groceries.count('apple') # returns 1, since there is one occurance if apple in the list groceries
+
+numbers = [1,1,1,2,2,3,4,5,5,6]
+print numbers.count(1) # prints 3, since there are 3 occurances of 1 in the list 'numbers'
+
+```
+
+Find the index of the first occurance of an item
+
+```python
+numbers = [1,1,1,2,2,3,4,5,5,6]
+numbers.index(2) # returns 3, since index 3 is the first occurance of the number 2 in list 'numbers'.
+
+```
+
+**Destructive vs Non-Destructive Modifications of Lists**
+
+Destructive Modifications destroy the original list.
+Non-Destructive Modifications preserve the original list.
+
+Destructive Methods
+```python
+a = [1,2,3,4,5,6,7]
+a.remove(6)
+a.pop() # returns the last element and gets rid of it from the list
+```
+
+Destructive vs non-destructive sorting
+
+```python
+
+# Non-Destructively with .sort(list)
+
+a = [ 7, 2, 5, 3, 5, 11, 7 ]
+print "At first, a =", a
+a.sort()
+print "After a.sort(), a =",a
+
+# Non-Destructively with sorted(list)
+
+a = [ 7, 2, 5, 3, 5, 11, 7 ]
+print "At first"
+print "   a =", a
+b = sorted(a)
+print "After b = sorted(a)"
+print "   a =", a
+print "   b =", b
+```
+
 
 
 
