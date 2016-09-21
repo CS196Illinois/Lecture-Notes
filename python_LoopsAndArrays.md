@@ -9,6 +9,7 @@ Loops allow you to repeat a block of code multiple times. If we want to print th
 
 ```python
 print 0
+print 1
 print 2
 print 3
 print 4
