@@ -370,7 +370,7 @@ Destructive vs non-destructive sorting
 
 ```python
 
-# Non-Destructively with .sort(list)
+# Destructively with .sort(list)
 
 a = [ 7, 2, 5, 3, 5, 11, 7 ]
 print "At first, a =", a
