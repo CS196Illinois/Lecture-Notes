@@ -5,7 +5,7 @@
 
 ## For Loops
 
-Loops allow you to repeat a block of code multiple times. If we want to print the numbers 1 through 10, we can do this:
+Loops allow you to repeat a block of code multiple times. If we want to print the numbers 0 through 10, we can do this:
 
 ```python
 print 0
