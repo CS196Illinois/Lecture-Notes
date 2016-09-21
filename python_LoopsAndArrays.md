@@ -389,6 +389,78 @@ print "   b =", b
 ```
 
 
+**Swapping Indexes**
+
+```python
+# Create a list
+a = [ 2, 3, 5, 7 ]
+print "a =", a
+
+# Failed swap
+a[0] = a[1]
+a[1] = a[0]
+print "After failed swap of a[0] and a[1]"
+print "   a=",a
+
+# Reset the list
+a = [ 2, 3, 5, 7 ]
+print "After resetting the list"
+print "   a =", a
+
+# Swap with a temp variable
+temp = a[0]
+a[0] = a[1]
+a[1] = temp
+print "After swapping a[0] and a[1]"
+print "   a =", a
+
+# Swap with tuple assignment
+a[0],a[1] = a[1],a[0]
+print "After swapping a[0] and a[1] again"
+print "   a =", a
+```
+
+##Looping over Lists
+
+```python
+
+# Create a list
+a = [ 2, 3, 5, 7 ]
+print "a =", a
+
+# Looping with:  for item in list
+print "Here are the items in a:"
+for item in a:
+    print item
+
+# Looping with:  for index in range(len(list))
+print "And here are the items with their indexes:"
+for index in range(len(a)):
+    print "a[", index, "] =", a[index]
+
+# Looping backward
+print "And here are the items in reverse:"
+for index in range(len(a)):
+    revIndex = len(a)-1-index
+    print "a[", revIndex, "] =", a[revIndex]
+  
+```
+
+Warning: Try not to destructively modify a list when you're iterating!
+
+## Next Time:
+
+- 2d Arrays
+- Cloning Lists
+- List Comprehensions
+- Object iteration
+- zip/unzip
+- tuples
+
+
+
+
+
 
 
 
