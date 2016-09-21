@@ -223,7 +223,7 @@ Stack memory is a special region of your computer’s memory that stores tempora
 
 The heap is a region of your computer’s memory that is not managed automatically for you, and is not as tightly managed by the CPU. It is a more free-floating region of memory (and is larger). 
 
-*Python*
+**Python**
 Python lists are dynamic. There is no native implementation of static lists in python. That means all lists in python can 'grow'.
 
 ## Python Lists
