@@ -9,11 +9,11 @@ Not using any test functions (where appropriate) is a 5-point error; not use eno
 ### Clarity 
 Even if your code works, and is reasonably efficient, your logic must not be overly complex, particularly if reasonably clear and straightforward options exist, which they nearly always will in this course. Many of the 2-point issues below involve clarity, but the 5-point version is reserved for especially gross violations.
 ### Efficiency 
-This being 15-112, you do not have to use the most efficient solution in general; but your code may not be "grossly" inefficient, particularly if your approach is also unclear, and especially if you had simple, clear, and reasonably efficient options to choose from.
+You do not have to use the most efficient solution in general; but your code may not be "grossly" inefficient, particularly if your approach is also unclear, and especially if you had simple, clear, and reasonably efficient options to choose from.
 
 # Minor Style Issues
 ### Ownership 
-Include your name, andrew id, and section in a comment at the top of every file you submit
+Include your name, name the file correctly, etc
 ### Meaningful Names 
 Use meaningful variable and function names (whenever possible), with proper mixedCase/camelCase naming, with the first letter in lowercase (eg: tetrisPiece)
 ### Comments 
