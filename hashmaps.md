@@ -11,7 +11,7 @@ Syntax:
 newDict = {} # initializes a dictionary with no values
 newDict['newKey'] = 'newValue' # inserts a new key-value pair
 
-stateMap = { 'pittsburgh':'PA', 'chicago':'IL', 'seattle':'WA', 'boston':'MA' } # initializes a dictionary with predefined values
+stateMap = { 'pittsburgh':'PA', 'chicago':'IL'} # initializes a dictionary with predefined values
 print stateMap['pittsburgh'] # returns 'PA'
 
 if 'pittsburgh' in stateMap:
