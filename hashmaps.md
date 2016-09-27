@@ -8,27 +8,36 @@ Because dictionaries are unorderded, you cannot access elements by index. Instea
 ## How do dictionaries work
 Syntax:
 ```python
+
+### Constructor
 newDict = {} # initializes a dictionary with no values
 newDict['newKey'] = 'newValue' # inserts a new key-value pair
 
+### Constructor overload
 stateMap = { 'pittsburgh':'PA', 'chicago':'IL'} # initializes a dictionary with predefined values
 print stateMap['pittsburgh'] # returns 'PA'
 
-if 'pittsburgh' in stateMap:
-  return stateMap['pittsburgh'] # prints 'PA'
-  
+### Constructor overload
 pairs = [("cow", 5), ("dog", 98), ("cat", 1)]
 d = dict(pairs) # has {'cow':5, 'dog':98, 'cat':1}
 
+### Check for membership
+if 'pittsburgh' in stateMap:
+  return stateMap['pittsburgh'] # prints 'PA'
+
+### Key requirements
 keys must be immutable types - no iterables!
 
+### print the number of items in dictionary.
 d = { 1:[1,2,3,4,5], 2:"abcd" }
 print(len(d))
 
+### Dictionary
 d = { 1:"a", 2:"b" }
 d.clear()
 print(d, len(d))
 
+### Iterate over key/values in dictionary
 d = { 1:"a", 2:"b" }
 for key in d:
    print(key, d[key])
