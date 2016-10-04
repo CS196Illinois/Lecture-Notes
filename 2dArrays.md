@@ -16,7 +16,7 @@ list that have the same index. For example, the first row of x is simply x[0]. T
 ## static allocation of 2d lists
 Syntax for accessing an element from a 2d array:
 ```python
-print x[0][1] // prints the first index of the 0th list in x. In this case, prints the integer 2.
+print x[0][1] # prints the first index of the 0th list in x. In this case, prints the integer 2.
 ```
 ## dynamic allocation of 2d lists
 ## Getting 2d list dimensions
