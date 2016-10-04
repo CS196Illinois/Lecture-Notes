@@ -51,5 +51,17 @@ for row in xrange(rows):
 
 
 ## Jagged 2d lists
+
+Lists do not have to be rectangular. We call these "jagged" or "ragged" lists. For these types of data structures, row and column lengths are unpredictable.
+
+```python
+x = [ [ 1, 2, 3 ] ,
+      [ 4, 5 ],
+      [ 6 ],
+      [ 7, 8, 9, 10 ] ]
+
+```
+
+
 ## n dimensional lists
 ## row-major vs column-major
