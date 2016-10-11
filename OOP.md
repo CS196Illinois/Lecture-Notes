@@ -19,3 +19,25 @@ class car:
   
   
 ```
+
+Methods
+
+Static Methods
+
+Inheritence
+
+## OOP Principles
+
+Encapsulation
+Inheritance
+Polymorphism
+
+
+
+## Abstract Classes vs Interfaces
+
+## Decorators
+
+## Command Line
+
+
