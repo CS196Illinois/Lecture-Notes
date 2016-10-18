@@ -7,7 +7,7 @@ programmers to use OOP if they wish.
 
 ## Syntax
 
-Declaring a class
+###Declaring a class
 ```python
 
 class car:
@@ -20,11 +20,31 @@ class car:
   
 ```
 
-Methods
+###Instance Methods
+Methods in classes look almost exactly the same as they do without, except you must pass in self:
 
-Static Methods
+```python
+def getValue(self):
+  return self.value
+```
 
-Inheritence
+###Static Methods
+Static methods are methods that do not require an instance of the class. Since these methods don't require an instance to be passed in, we do not pass in "self".
+
+```python
+@ staticmethod
+def getValue():
+  return "value"
+```
+
+Notice the @staticmethod decorator, which lets python know that the method signature does not require an instance of the class.
+
+### Class Methods
+
+
+###Inheritence
+
+### Variable SCope
 
 ## OOP Principles
 
