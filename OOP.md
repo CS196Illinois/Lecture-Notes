@@ -44,7 +44,11 @@ Notice the @staticmethod decorator, which lets python know that the method signa
 
 ###Inheritence
 
-### Variable SCope
+### Designing Variables for Inheritance
+Private vs Public variables: <br>
+Public attributes are those that you expect unrelated clients of your class to use, with your commitment to avoid backward incompatible changes. 
+
+Culturally, in python, you don't want to write to other class' instance or class variables. 
 
 ## OOP Principles
 
