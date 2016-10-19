@@ -51,11 +51,53 @@ class Foo(object):
 
 ###Inheritence
 
+Single Inheritence
+```python
+class DerivedClassName(BaseClassName):
+    <statement-1>
+    .
+    .
+    .
+    <statement-N>
+ ```  
+ 
+Multiple Inheritence
+
+```python
+class DerivedClassName(Base1, Base2, Base3):
+    <statement-1>
+    .
+    .
+    .
+    <statement-N>
+```
+ 
+
 ### Designing Variables for Inheritance
 Private vs Public variables: <br>
 Public attributes are those that you expect unrelated clients of your class to use, with your commitment to avoid backward incompatible changes. 
 
-Culturally, in python, you don't want to write to other class' instance or class variables. 
+Culturally, in python, you don't want to write to other class' instance or class variables. In Java, you might have public, private, protected, etc. Who are you protecting this data from?
+
+Private Instances: <br>
+Python doesn't have private instance variables. However, we do have convention. If a variable name is prefix'd with an underscore, other python programmers should understand that this variable is "private", or that it shouldn't be accessed as a public part of the API.
+
+Example:
+```python
+_variable = 0
+```
+Class- Private Instances: <br>
+Since there is a valid use-case for class-private members (namely to avoid name clashes of names with names defined by subclasses), there is limited support for such a mechanism, called "name mangling". Any identifier of the form 
+
+```python
+__variable 
+```
+(at least two leading underscores, at most one trailing underscore) is textually replaced with 
+
+```python
+_classname__spam
+```
+
 
 ## OOP Principles
 
