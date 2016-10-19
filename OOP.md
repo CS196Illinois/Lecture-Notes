@@ -101,16 +101,11 @@ _classname__variable
 
 ## OOP Principles
 
-Encapsulation
-Inheritance
-Polymorphism
+Encapsulation <br>
+Inheritance <br>
+Polymorphism <br>
 
+On polymorphism - There is no built-in method overloading!
 
-
-## Abstract Classes vs Interfaces
-
-## Decorators
-
-## Command Line
 
 
