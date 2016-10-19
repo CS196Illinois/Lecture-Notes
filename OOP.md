@@ -41,6 +41,13 @@ Notice the @staticmethod decorator, which lets python know that the method signa
 
 ### Class Methods
 
+Class methods know their class.
+```python
+class Foo(object):
+    @classmethod
+    def hello(cls):
+        print("hello from %s" % cls.__name__)
+```
 
 ###Inheritence
 
