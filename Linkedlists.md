@@ -34,6 +34,13 @@ When you might want to insert items in the middle of the list <br>
 You don't need random access to any elements <br>
 You don't know the size of your dataset <br>
 
+## When to not use linked lists
+You need random access to elements <br>
+You need constant time access to indexed elements<br>
+You need speed when iterating through elements. Linked Lists are slower in iteration because arrays use pointer arithmetic<br>
+Memory is a concern: Arrays are more memory efficient than linked lists. Each Node in a linked list requires data and a pointer.<br>
+
+
 ## The Linked List Class
 
 ```python
