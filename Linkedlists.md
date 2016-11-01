@@ -14,7 +14,7 @@ There are several different types of linked lists such as:
 
 ### Singly Linked List
 
-[!singly linked list](https://cloud.githubusercontent.com/assets/7456865/19910299/1cf4958a-a05a-11e6-867f-44f2ffa386d1.png)
+![alt text](https://cloud.githubusercontent.com/assets/7456865/19910299/1cf4958a-a05a-11e6-867f-44f2ffa386d1.png)
 
 ### Doubly Linked List
 ### Circularly Linked List
