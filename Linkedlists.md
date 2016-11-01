@@ -18,21 +18,57 @@ There are several different types of linked lists such as:
 
 ### Circularly Linked List
 
+Circularly Linked Lists have a tail that has a pointer pointing back to the first node. Useful for things like Round-Robin Queues.
+
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910394/a1d5e5ec-a05a-11e6-8ca2-aaeb0f8335a7.png)
 
 ## Why use linked Lists?
 
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910299/1cf4958a-a05a-11e6-867f-44f2ffa386d1.png)
 
+## The Linked List Class
+
+```python
+ class Node(object):
+ 
+   def __init__(self, data=None, next_node=None):
+       self.data = data
+       self.next = next_node
+```
 
 ## Iterating through a linked list
-## Add a node
-## Tortoise and Hare Strategy
+```python
+  def print_list(head):
+      while(head != None):
+          print head.data
+          head = head.next
+```
+
+## Add a node to the tail of a linked list
+```python
+  def Insert(head, data):
+      if(head == None):
+          return Node(data,None)
+      else:
+          pointer = head
+          while(head.next != None):
+              head = head.next
+          head.next = Node(data, None)
+      return pointer
+```
+
+## Keeping track of the Head Pointer
+There are many problems where after conducting a manipulation, you have to return the entire linked list. This implies that you have to keep track of the head node. Make sure you keep a copy of the head node to return at the end of the problem.
+
+## Tortoise and Hare Strategy - Detecting a Cycle in Linked Lists
 
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910310/2747f5ae-a05a-11e6-86d4-5bca17109c06.png)
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910315/3198f71a-a05a-11e6-80f1-c7f7187226ca.png)
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910321/39f1b488-a05a-11e6-812b-38ce8991bf43.png)
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910331/44b7e41e-a05a-11e6-893a-0f8a1f966909.png)
+
+## Detecting a Merge point for two linked lists
+
 
 
 
