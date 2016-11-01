@@ -62,13 +62,30 @@ There are many problems where after conducting a manipulation, you have to retur
 
 ## Tortoise and Hare Strategy - Detecting a Cycle in Linked Lists
 
+Given a linked list, how do you figure out if it has a cycle?
+Instantiate a slow and fast pointer
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910310/2747f5ae-a05a-11e6-86d4-5bca17109c06.png)
+
+Increment both pointers at different speeds
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910315/3198f71a-a05a-11e6-80f1-c7f7187226ca.png)
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910321/39f1b488-a05a-11e6-812b-38ce8991bf43.png)
+
+If they meet, you know that there is a cycle!
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910331/44b7e41e-a05a-11e6-893a-0f8a1f966909.png)
 
-## Detecting a Merge point for two linked lists
-
+## Popular Linked List Questions
+Iterate through a linked list <br>
+Get value of node N in linked list<br>
+Reverse a linked list<br>
+Insert Node at head of linked list<br>
+Insert Node at tail of linked list<br>
+Insert Node at Nth position of linked list<br>
+delete node at Nth position of linked list<br>
+Merge two sorted linked lists<br>
+Delete duplicate values in linked list<br>
+Detect cycle in linked list<br>
+Find whether or not two linked lists merge<br>
+Given two merged linked lists, find the merge node<br>
 
 
 
