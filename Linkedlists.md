@@ -26,6 +26,14 @@ Circularly Linked Lists have a tail that has a pointer pointing back to the firs
 
 ![alt text](https://cloud.githubusercontent.com/assets/7456865/19910299/1cf4958a-a05a-11e6-867f-44f2ffa386d1.png)
 
+Circularly Linked lists are sometimes convenient for certain problems <br>
+Linked Lists have Constant insertion time at the head "index", while dynamic arrays must resize <br>
+Linked Lists can be used to implement queues / stacks more efficiently <br>
+When You don't need to access an index of the list <br>
+When you might want to insert items in the middle of the list <br>
+You don't need random access to any elements <br>
+You don't know the size of your dataset <br>
+
 ## The Linked List Class
 
 ```python
