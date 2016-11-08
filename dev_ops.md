@@ -59,62 +59,62 @@ An example of a toolchain might look something like this:<br>
 6) conduct code reviews<br>
 
 ### How do you manage technical debt?
-1) Emphasis on refactoring, replacing, and modernizing legacy code
-2) Avoid technical debt at all costs using architecture design and review?
-3) Strategically incur short-term technical debt to enable experimentation and fast feedback?
-4) Track and measure short-term technical debt and pay it off ASAP?
-5) Keep track of high-cost technical debts in backlogs
-6) Do you suffer from technical debt as a result of legacy application development or lack of quality control in the past?
+1) Emphasis on refactoring, replacing, and modernizing legacy code<br>
+2) Avoid technical debt at all costs using architecture design and review?<br>
+3) Strategically incur short-term technical debt to enable experimentation and fast feedback?<br>
+4) Track and measure short-term technical debt and pay it off ASAP?<br>
+5) Keep track of high-cost technical debts in backlogs<br>
+6) Do you suffer from technical debt as a result of legacy application development or lack of quality control in the past?<br>
 
 ### How is your code managed and versioned?
-1) Distributed Version Control
-2) Shared network drives and backups
-3) open source sharing systems, server-based sharing systems
-4) Google Docs!
+1) Distributed Version Control<br>
+2) Shared network drives and backups<br>
+3) open source sharing systems, server-based sharing systems<br>
+4) Google Docs!<br>
 
 
 ## Build
 ### Build Tools (Tools that automatically generate executables from source. ie apk's for android)
 Build Automation scripts and automates activities that programers have to do often like:
 
-1) Downloading dependencies
-2) compiling source into binary
-3) Packaging binary
-4) Running Tests
-5) Automatically Deploy to prod
+1) Downloading dependencies<br>
+2) compiling source into binary<br>
+3) Packaging binary<br>
+4) Running Tests<br>
+5) Automatically Deploy to prod<br>
 
 What build tools are you using? What testing frameworks?
 
 ### Continuous Integration
-1) Do you have continuous integration?
-2) Does it automatically deploy to prod?
-3) What conditions does the build fail?
-4) In-house solutions or SaaS?
+1) Do you have continuous integration?<br>
+2) Does it automatically deploy to prod?<br>
+3) What conditions does the build fail?<br>
+4) In-house solutions or SaaS?<br>
 
 ### Automation
-1) on-demand: builds through a user running a script on the command line
-2) scheduled: CI server, nightly builds, regular CRON jobs
-3) triggered: Triggered on commit to VCS? 
+1) on-demand: builds through a user running a script on the command line<br>
+2) scheduled: CI server, nightly builds, regular CRON jobs<br>
+3) triggered: Triggered on commit to VCS? <br>
 
 ## Package and Dependency Management
 ### What Package Manager do you use?
-1) In-house package manager (SPM)
-2) Public or open source package manager?
+1) In-house package manager (SPM)<br>
+2) Public or open source package manager?<br>
 
 ### How do you manage dependencies and versioning?
-1) Maintain artifact repository with the latest binaries which all teams use
-2) Work item tracking system 
-3) Versioned interfaces between different services
-4) Track versions in google docs or a spreadsheet
+1) Maintain artifact repository with the latest binaries which all teams use<br>
+2) Work item tracking system <br>
+3) Versioned interfaces between different services<br>
+4) Track versions in google docs or a spreadsheet<br>
 
 ## Release
 ## Configure
 ## Monitor
 ### How are issues in prod reported to dev teams?
-1) In-house instrumentation generates automated alerts to all relevant teams
-2) SaaS issue tracking tools that are available to all relevant teams in real-time
-3) End-user requests and complaints via direct contact
-4) We don't find out until its too late :(
+1) In-house instrumentation generates automated alerts to all relevant teams<br>
+2) SaaS issue tracking tools that are available to all relevant teams in real-time<br>
+3) End-user requests and complaints via direct contact<br>
+4) We don't find out until its too late :(<br>
 
 
 
