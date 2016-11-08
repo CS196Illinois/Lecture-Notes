@@ -46,8 +46,7 @@ An example of a toolchain might look something like this:<br>
 ### Performance Monitoring
 ### Documentation
 
-# Dev Ops Issues to Think About
-
+# Dev Ops Performance Benchmarks
 
 ## Code / Test
 ### How do you measure code quality?
@@ -107,21 +106,34 @@ What build tools are you using? What testing frameworks?
 3) Versioned interfaces between different services<br>
 4) Track versions in google docs or a spreadsheet<br>
 
-## Release
-## Configure
-## Monitor
+## Configure and Release
+### Cloud Control
+
+
+
+## Monitoring and Issues (Infringing a little on infra territory)
+### How are issues in prod discovered?
+1) Alerts that are triggered when thresholds are crossed before visible disruption in service occurs <br>
+2) Manual inspection by staff (who does the testing? ops, devs, testers?)<br>
+3) How is your instrumentation? Do you have in-house tools to help you monitor your stack? Logging and Log analysis?<br>
+4) Reported by end users?<br>
+5) We don't find out until its too late :(
+
+
 ### How are issues in prod reported to dev teams?
 1) In-house instrumentation generates automated alerts to all relevant teams<br>
 2) SaaS issue tracking tools that are available to all relevant teams in real-time<br>
 3) End-user requests and complaints via direct contact<br>
-4) We don't find out until its too late :(<br>
 
+### How long does it take to make small changes to deploy for a critical production issue?
+seconds, minutes, hours, days?
 
-
-
-## Issues and Testing
-### How are Issues in Prod reported to dev teams?
-Instrumentation
+### How is your uptime?
+- Is your system high availability?<br>
+- Six Nines - available 99.9999% of the time - unscheduled downtime of 31.5 seconds a year<br>
+- What happens during a catastrophic server or infrastructure error?<br>
+- How do catastrophic errors propogate? Who gets notified? How do you handle such changes?<br>
+- Do you have a safety mechanism? Rollbacks? <br>
 
 
 # Why Dev Ops is important
