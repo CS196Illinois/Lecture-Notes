@@ -37,6 +37,9 @@ An example of a toolchain might look something like this:<br>
 
 ### Code Review
 ### Continuous Integration
+
+![CI](https://insights.sei.cmu.edu/assets/content/image%20for%20continuous%20integration%20and%20devops_01262015.jpg)
+
 ### Build Tools
 ### Different Types of Testing
 ### Testing Libraries and Implementation
