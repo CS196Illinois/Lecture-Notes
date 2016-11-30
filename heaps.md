@@ -8,6 +8,8 @@ that all parent nodes must be bigger than their child nodes, this dictates how t
 heaps, which are essentially a collection of trees where root nodes are linked together in a doubly linked list. These
 configurations allow for runtime gains on insert, delete, and merge.
 
+![heap](https://en.wikipedia.org/wiki/Heap_(data_structure)#/media/File:Max-Heap.svg)
+
 ## Min vs Max Heap
 
 A Min heap is a heap that follows the rule that "all parent nodes must be less than or equal to their child nodes". This means
