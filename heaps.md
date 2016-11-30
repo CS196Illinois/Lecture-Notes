@@ -16,7 +16,10 @@ the root node is the greatest in the collection.
 
 ## Runtimes
 
-## Applicationswe
-### Priority Queues
+find-min(max): O(1)
+delete-min: O(logn)
+insert: O(logn)
+merge: O(n)
+
 ### Question: How do you find the median of a running stream of integers?
-### Answer: Heaps!
+
