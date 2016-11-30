@@ -8,7 +8,7 @@ that all parent nodes must be bigger than their child nodes, this dictates how t
 heaps, which are essentially a collection of trees where root nodes are linked together in a doubly linked list. These
 configurations allow for runtime gains on insert, delete, and merge.
 
-![heap](https://en.wikipedia.org/wiki/Heap_(data_structure)#/media/File:Max-Heap.svg)
+![heap](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Min-heap.png/240px-Min-heap.png)
 
 ## Min vs Max Heap
 
@@ -18,10 +18,10 @@ the root node is the greatest in the collection.
 
 ## Runtimes
 
-find-min(max): O(1)
-delete-min: O(logn)
-insert: O(logn)
-merge: O(n)
+find-min(max): O(1) <br>
+delete-min: O(logn)<br>
+insert: O(logn)<br>
+merge: O(n)<br>
 
 ### Question: How do you find the median of a running stream of integers?
 
